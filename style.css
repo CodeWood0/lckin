@@ -1,0 +1,72 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('./background.png');
+    background-size: cover;
+    color: #ff00ff; /* Bright pink for that gaudy look */
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+video {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transition: opacity 1s;
+}
+
+.main-header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5em;
+    color: yellow;
+    text-align: center;
+    z-index: 1;
+}
+
+.sub-header {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: lightgreen;
+    text-align: center;
+    z-index: 1;
+}
+
+.meme-text {
+    position: absolute;
+    font-size: 1.5em;
+    color: #ff00ff;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+@keyframes moveLeftToRight {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes moveRightToLeft {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
+
+@keyframes moveTopToBottom {
+    0% { top: -100%; }
+    100% { top: 100%; }
+}
+
+@keyframes moveBottomToTop {
+    0% { top: 100%; }
+    100% { top: -100%; }
+}
+
+@keyframes moveDiagonal {
+    0% { top: -100%; left: -100%; }
+    100% { top: 100%; left: 100%; }
+}

@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="video-container"></div>
-    <div class="main-header">Welcome to the Most Random Site Ever!</div>
-    <div class="sub-header">Get ready for absolute chaos!</div>
-    <div class="meme-text" style="top: 10%; left: -100%;">When life gives you lemons, make lemonade!</div>
-    <div class="meme-text" style="top: 30%; left: 100%;">Just do it! - Shia LaBeouf</div>
-    <div class="meme-text" style="top: 50%; left: -100%;">Keep calm and carry on.</div>
-    <div class="meme-text" style="top: 70%; left: 100%;">May the force be with you.</div>
-    <script src="app.js"></script>
+    <a href="https://twitter.com/LOCKEDIN_SOLANA" target="_blank" id="twitter-icon">
+        <img src="twitter.png" alt="Twitter" />
+    </a>
+   <div id="overlay"></div>
+    <div class="above-fold">
+        <div id="video-container"></div>
+        <div class="main-header">LOCKED IN</div>
+        <div class="sub-header">Yo. We are absolutely locked in!</div>
+        <button id="play-button">LOCKED IN?</button>
+    </div>
+    <div id="chevron-container" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); text-align: center; cursor: pointer;">
+        <div id="lock-emoji" style="font-size: 2em;">🔒</div>
+        <div id="question-emoji" style="font-size: 2em;">❓</div>
+        <div id="chevron" style="font-size: 3em;">🔻</div>
+    </div>
+    <section id="memes-section" style="display: none; padding: 100px 0;">
+        <div class="memes-container"></div>
+    </section>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
